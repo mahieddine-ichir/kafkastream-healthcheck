@@ -7,8 +7,8 @@ import org.springframework.kafka.config.StreamsBuilderFactoryBean
 
 @Configuration
 @ConditionalOnProperty(value = ["management.health.kafkastreams.enabled"], havingValue = "true")
-open class HealthCheckConfiguration {
+open class KafkaStreamsHealthCheckConfiguration {
 
     @Bean
-    open fun kafkaHealthCheck(streamsBuilderFactoryBean: StreamsBuilderFactoryBean) = KafkaHealthCheck(streamsBuilderFactoryBean)
+    open fun kafkaHealthCheck(streamsBuilderFactoryBean: StreamsBuilderFactoryBean) = KafkaStreamsHealthCheck(streamsBuilderFactoryBean)
 }

@@ -1,7 +1,8 @@
 # Kafka Stream health check actuator
 A Kafka Stream Spring health check actuator.
 
-_The component is written in Kotlin_
+* The component is written in [Kotlin](http://kotlinlang.org)
+* It targets Java 12
 
 # Description
 The health checks for the Kafka Stream tasks sanity though `org.springframework.kafka.config.StreamsBuilderFactoryBean`.

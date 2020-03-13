@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.thinatech.management.kafkastream.HealthCheckConfiguration
+  com.thinatech.management.kafkastream.KafkaStreamsHealthCheckConfiguration

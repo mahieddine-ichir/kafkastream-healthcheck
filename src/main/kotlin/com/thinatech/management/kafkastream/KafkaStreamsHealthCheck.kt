@@ -4,10 +4,8 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.actuate.health.AbstractHealthIndicator
 import org.springframework.boot.actuate.health.Health
 import org.springframework.kafka.config.StreamsBuilderFactoryBean
-import org.springframework.stereotype.Component
 
-@Component
-open class KafkaHealthCheck(private val streamsBuilderFactoryBean: StreamsBuilderFactoryBean) : AbstractHealthIndicator() {
+open class KafkaStreamsHealthCheck(private val streamsBuilderFactoryBean: StreamsBuilderFactoryBean) : AbstractHealthIndicator() {
 
     @Value("\${management.health.kafkastreams.ensure-state:running}")
     lateinit var streamStateToEnsure: String
